@@ -26,6 +26,8 @@
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#mission" class="nav-link">Mission</a></li>
+                <li><a href="#vision" class="nav-link">Vision</a></li>
                 <li><a href="#courses" class="nav-link">Courses</a></li>
                 <li><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -58,7 +60,12 @@
         <!-- Hero Content -->
         <div class="hero-content">
             <div class="hero-badge">
-                <span class="badge-icon">⚓</span>
+                <span class="badge-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3 4.5 6v5c0 4.62 3.18 9.14 7.5 10.5 4.32-1.36 7.5-5.88 7.5-10.5V6L12 3z"></path>
+                        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m9.5 12 2 2 3-3"></path>
+                    </svg>
+                </span>
                 <span class="badge-text">Since 2020 | Bangladesh Navy</span>
             </div>
 
@@ -95,25 +102,54 @@
             <div class="hero-buttons">
                 <a href="#courses" class="btn btn-primary">
                     <span class="btn-text">Explore Courses</span>
-                    <span class="btn-icon">→</span>
+                    <span class="btn-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14"></path>
+                            <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m13 6 6 6-6 6"></path>
+                        </svg>
+                    </span>
                 </a>
                 <a href="#about" class="btn btn-secondary">
                     <span class="btn-text">Learn More</span>
-                    <span class="btn-icon">↓</span>
+                    <span class="btn-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                            <path d="M12 10v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                            <circle cx="12" cy="7.5" r="1" fill="currentColor"></circle>
+                        </svg>
+                    </span>
                 </a>
             </div>
 
             <div class="hero-features">
                 <div class="feature-badge">
-                    <span class="feature-icon">🏆</span>
+                    <span class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <circle cx="12" cy="9" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                            <path d="m10.5 9.5 1.5 1.5 3-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M9 13.5 8 20l4-2 4 2-1-6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
                     <span class="feature-text">Accredited</span>
                 </div>
                 <div class="feature-badge">
-                    <span class="feature-icon">🌟</span>
+                    <span class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                            <path d="M3.5 12h17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+                            <path d="M12 3c3.5 2.5 3.5 13 0 18-3.5-5-3.5-15.5 0-18z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+                        </svg>
+                    </span>
                     <span class="feature-text">Global Standards</span>
                 </div>
                 <div class="feature-badge">
-                    <span class="feature-icon">💼</span>
+                    <span class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <rect x="4" y="8" width="16" height="12" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+                            <path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                            <path d="M4 12h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+                        </svg>
+                    </span>
                     <span class="feature-text">Career Ready</span>
                 </div>
             </div>
@@ -158,30 +194,74 @@
 
                     <p>We take pride in our team of highly skilled teachers, trainers, chefs, and demonstrators who work tirelessly to ensure our students to receive the highest quality education. Their expertise and commitment play a crucial role in shaping the future professionals of the culinary and hospitality industry.</p>
 
-                    <div class="mission-box">
-                        <h3>Our Mission</h3>
-                        <p>Our institute is dedicated to develop skilled human resources in the art of culinary and hospitality management, adhering to global standards. Through our rigorous programs, we aim to equip our students with the knowledge, practical skills, and industry insights necessary to excel in their careers.</p>
+                    <div class="mission-vision">
+                        <article class="mission-card" id="mission">
+                            <div class="mv-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" focusable="false" role="img">
+                                    <path d="M12 2a1 1 0 0 1 .9.55l2.18 4.42 4.88.71a1 1 0 0 1 .55 1.7l-3.53 3.44.83 4.85a1 1 0 0 1-1.45 1.05L12 16.9l-4.36 2.29a1 1 0 0 1-1.45-1.05l.83-4.85-3.53-3.44a1 1 0 0 1 .55-1.7l4.88-.71L11.1 2.55A1 1 0 0 1 12 2z" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3>Our Mission</h3>
+                            <p>The mission of Navy Institute of Hospitality Management (NIHOM) is to preserve and elevate the culinary arts through comprehensive practical and theoretical training. Across our programs in food and beverage production, bakery and pastry production, and food and beverage service we inspire students to become skilled and confident professionals.</p>
+                            <p>We nurture a creative, supportive, and modern learning environment where learners can explore their talents, refine their skills, and discover the artistry of gastronomy. Our graduates are prepared to make their mark in the ever-evolving hospitality industry with a commitment to excellence and industry relevance.</p>
+                        </article>
+                        <article class="mission-card vision-card" id="vision">
+                            <div class="mv-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" focusable="false" role="img">
+                                    <path d="M12 4a8 8 0 0 1 7.75 6.05.99.99 0 0 1 0 .5A8 8 0 1 1 12 4zm0 2a6 6 0 0 0-5.65 4.22A6.02 6.02 0 0 0 12 18a6 6 0 0 0 5.65-7.78A6.02 6.02 0 0 0 12 6zm0 2.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3>Our Vision</h3>
+                            <p>Our vision for NIHOM extends beyond professional excellence in hospitality. We aspire to unlock each learners' true potential, nurturing their individual growth so they can contribute meaningfully to a thriving hospitality sector.</p>
+                            <p>By fostering character development and strengthening intrinsic abilities, we aim for our graduates to become influential leaders who embody excellence, integrity, and a passion for service while advancing their careers and the industry.</p>
+                        </article>
                     </div>
                 </div>
 
                 <div class="about-features">
                     <div class="feature-card">
-                        <div class="feature-icon">🎓</div>
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M12 5 20.5 9 12 13 3.5 9 12 5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path>
+                                <path d="M5.5 10.5V14c0 2 3 3.5 6.5 3.5S18.5 16 18.5 14v-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M20.5 9v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
                         <h3>Expert Faculty</h3>
                         <p>Highly skilled teachers, trainers, and chefs</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🏢</div>
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <rect x="5" y="4" width="14" height="16" rx="1.5" ry="1.5" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+                                <path d="M5 9h14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+                                <path d="M9 4v16M15 4v16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
                         <h3>Modern Facilities</h3>
                         <p>State-of-the-art equipment and infrastructure</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🌍</div>
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                                <path d="M3.5 12h17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+                                <path d="M12 3c3.5 2.5 3.5 13 0 18-3.5-5-3.5-15.5 0-18z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
                         <h3>Global Standards</h3>
                         <p>Education adhering to international standards</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">⚓</div>
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <circle cx="12" cy="7" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                                <path d="M12 4V2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                                <path d="M7 13a5 5 0 0 0 5 5 5 5 0 0 0 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                                <path d="M4 13c0 5 4 9 8 9s8-4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M9 13h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
                         <h3>Navy Supervised</h3>
                         <p>Operated under Bangladesh Navy supervision</p>
                     </div>
@@ -268,25 +348,45 @@
                 <div class="gallery-item">
                     <img src="Various Photos_extracted/images/image_1.jpeg" alt="NIHOM Facility 1" loading="lazy">
                     <div class="gallery-overlay">
-                        <span class="gallery-icon">🔍</span>
+                        <span class="gallery-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+                            </svg>
+                        </span>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="Various Photos_extracted/images/image_2.jpeg" alt="NIHOM Facility 2" loading="lazy">
                     <div class="gallery-overlay">
-                        <span class="gallery-icon">🔍</span>
+                        <span class="gallery-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+                            </svg>
+                        </span>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="Various Photos_extracted/images/image_3.jpeg" alt="NIHOM Facility 3" loading="lazy">
                     <div class="gallery-overlay">
-                        <span class="gallery-icon">🔍</span>
+                        <span class="gallery-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+                            </svg>
+                        </span>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="Various Photos_extracted/images/image_4.jpeg" alt="NIHOM Facility 4" loading="lazy">
                     <div class="gallery-overlay">
-                        <span class="gallery-icon">🔍</span>
+                        <span class="gallery-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+                            </svg>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -305,17 +405,33 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-card">
-                        <div class="info-icon">📍</div>
+                        <div class="info-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <path d="M12 3c-3.31 0-6 2.69-6 6 0 4.5 6 11 6 11s6-6.5 6-11c0-3.31-2.69-6-6-6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+                            </svg>
+                        </div>
                         <h3>Location</h3>
                         <p>Labonchora, Khulna<br>Campus of School of Logistics and Management (SOLAM)<br>Bangladesh Navy</p>
                     </div>
                     <div class="info-card">
-                        <div class="info-icon">📧</div>
+                        <div class="info-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <rect x="3" y="5" width="18" height="14" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+                                <path d="M3 8.5 12 14l9-5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
                         <h3>Email</h3>
                         <p>info@nihom.edu.bd</p>
                     </div>
                     <div class="info-card">
-                        <div class="info-icon">📞</div>
+                        <div class="info-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false">
+                                <rect x="7" y="3" width="10" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+                                <line x1="9" y1="6" x2="15" y2="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line>
+                                <line x1="12" y1="18" x2="12" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                            </svg>
+                        </div>
                         <h3>Phone</h3>
                         <p>Contact number coming soon</p>
                     </div>
@@ -356,6 +472,8 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#mission">Mission</a></li>
+                        <li><a href="#vision">Vision</a></li>
                         <li><a href="#courses">Courses</a></li>
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -382,7 +500,12 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" title="Back to top">↑</button>
+    <button id="backToTop" class="back-to-top" title="Back to top">
+        <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+            <path d="M12 19V5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="m5 12 7-7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+    </button>
 
     <script src="script.js"></script>
 </body>
