@@ -483,17 +483,8 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Course card view details button
-const viewButtons = document.querySelectorAll('.btn-view');
-
-viewButtons.forEach((btn, index) => {
-    btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const courseCard = btn.closest('.course-card');
-        const courseTitle = courseCard.querySelector('.course-title').textContent;
-        alert(`More information about "${courseTitle}" will be available soon. Please contact us for detailed course information.`);
-    });
-});
+// Course card view details button - now handled by anchor links in HTML
+// No JavaScript needed as buttons are now <a> tags linking to course pages
 
 // Enhanced parallax effect for hero and sections
 window.addEventListener('scroll', () => {

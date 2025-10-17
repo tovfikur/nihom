@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Overview of All Programs - Navy Institute of Hospitality Management (NIHOM)">
+    <title>All Programs - NIHOM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .course-detail {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, #ecf0f1 0%, #ffffff 100%);
+        }
+        .course-hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .course-hero img {
+            width: 100%;
+            max-width: 1000px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            margin-bottom: 40px;
+        }
+        .course-hero h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .course-hero p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .course-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .program-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+        }
+        .program-card h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .program-card p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .program-link {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .program-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(52, 152, 219, 0.4);
+        }
+        .program-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .highlight-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 3px solid #3498db;
+        }
+        .highlight-item strong {
+            color: #2c3e50;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.4);
+        }
+        .intro-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .intro-section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .intro-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>NIHOM</h1>
+                    <p class="logo-subtitle">Navy Institute of Hospitality Management</p>
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#courses" class="nav-link">Courses</a></li>
+                <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Course Detail Section -->
+    <section class="course-detail">
+        <div class="container">
+            <div class="course-hero">
+                <img src="Nihom Web_extracted/images/courses-overview.jpg" alt="Overview of All Programs">
+                <h1>Overview of All Programs</h1>
+                <p>Explore our complete range of hospitality management programs designed for your success</p>
+            </div>
+
+            <div class="course-content">
+                <div class="intro-section">
+                    <h2>Welcome to NIHOM Programs</h2>
+                    <p>At Navy Institute of Hospitality Management (NIHOM), we offer three comprehensive programs designed to prepare students for successful careers in the hospitality industry. Each program combines theoretical knowledge with extensive hands-on training, ensuring our graduates are industry-ready from day one.</p>
+                    <p>Our programs are taught by experienced professionals who bring real-world industry experience into the classroom. With state-of-the-art facilities and a curriculum developed in consultation with industry leaders, NIHOM provides education that meets global hospitality standards.</p>
+                </div>
+
+                <div class="program-card" style="border-left: 5px solid #f39c12;">
+                    <h2>1. Bakery and Pastry Production</h2>
+                    <p>Master the art and science of baking with our comprehensive Bakery and Pastry Production program. From fundamental techniques to advanced pastry arts, this course covers everything aspiring bakers and pastry chefs need to succeed.</p>
+
+                    <div class="program-highlights">
+                        <div class="highlight-item">
+                            <strong>Focus:</strong> Bread, pastries, cakes, desserts, chocolate work
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Skills:</strong> Baking techniques, decoration, presentation
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Career:</strong> Pastry Chef, Bakery Manager, Chocolatier
+                        </div>
+                    </div>
+
+                    <a href="bakery-pastry.html" class="program-link">Learn More →</a>
+                </div>
+
+                <div class="program-card" style="border-left: 5px solid #e74c3c;">
+                    <h2>2. Food and Beverage Production</h2>
+                    <p>Develop professional culinary skills with our Food and Beverage Production program. Learn from expert chefs and gain hands-on experience in cooking techniques, menu planning, and kitchen management.</p>
+
+                    <div class="program-highlights">
+                        <div class="highlight-item">
+                            <strong>Focus:</strong> Cooking techniques, international cuisine, menu planning
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Skills:</strong> Culinary arts, kitchen management, food safety
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Career:</strong> Executive Chef, Restaurant Manager, Catering Chef
+                        </div>
+                    </div>
+
+                    <a href="food-beverage-production.html" class="program-link">Learn More →</a>
+                </div>
+
+                <div class="program-card" style="border-left: 5px solid #27ae60;">
+                    <h2>3. Food and Beverage Service</h2>
+                    <p>Excel in hospitality service with our Food and Beverage Service program. Learn professional service techniques, guest relations, and operational management to create exceptional dining experiences.</p>
+
+                    <div class="program-highlights">
+                        <div class="highlight-item">
+                            <strong>Focus:</strong> Service excellence, guest relations, operations
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Skills:</strong> Service techniques, beverage knowledge, management
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Career:</strong> Restaurant Manager, F&B Manager, Sommelier
+                        </div>
+                    </div>
+
+                    <a href="food-beverage-service.html" class="program-link">Learn More →</a>
+                </div>
+
+                <div class="intro-section" style="margin-top: 50px;">
+                    <h2>Why Choose NIHOM?</h2>
+                    <p><strong>Industry-Standard Facilities:</strong> Train with modern equipment and facilities that mirror real-world hospitality operations.</p>
+                    <p><strong>Expert Instructors:</strong> Learn from experienced professionals who bring industry knowledge and practical insights to every class.</p>
+                    <p><strong>Hands-On Training:</strong> Get extensive practical experience through supervised training sessions and real-world applications.</p>
+                    <p><strong>Bangladesh Navy Supervision:</strong> Benefit from the discipline, standards, and values associated with Bangladesh Navy oversight.</p>
+                    <p><strong>Career Support:</strong> Access career guidance and connections to employment opportunities in the hospitality industry.</p>
+                </div>
+
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="index.html#contact" class="program-link" style="padding: 15px 50px; font-size: 1.1rem;">Contact Us for Admission →</a>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="index.html#courses" class="back-btn">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NIHOM</h3>
+                    <p>Navy Institute of Hospitality Management</p>
+                    <p>Excellence in Culinary Arts & Hospitality Education</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#courses">Courses</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Labonchora, Khulna</p>
+                    <p>Bangladesh Navy</p>
+                    <p>info@nihom.edu.bd</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Navy Institute of Hospitality Management (NIHOM). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
