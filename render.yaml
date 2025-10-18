@@ -1,0 +1,26 @@
+# Render.com deployment configuration
+services:
+  - type: web
+    name: nihom-admin
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "cd admin && pip install -r ../requirements.txt"
+    startCommand: "cd admin && gunicorn app_prod:app --workers 2 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: PRODUCTION
+        value: true
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_ORIGINS
+        value: https://yourusername.github.io
+      - key: DATABASE_URL
+        value: sqlite:///nihom.db
+
+    # Persistent disk for database
+    disk:
+      name: nihom-db
+      mountPath: /opt/render/project/src/admin
+      sizeGB: 1

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+*.egg-info/
+
+# Database
+admin/*.db
+admin/*.sqlite
+admin/*.sqlite3
+
+# Environment Variables
+admin/.env
+.env
+
+# Logs
+admin/logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads
+uploads/
+
+# Node modules (if any)
+node_modules/
+package-lock.json

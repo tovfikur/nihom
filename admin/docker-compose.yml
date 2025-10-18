@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  admin:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./nihom.db:/app/nihom.db
+      - ../uploads:/app/uploads
+      - ..:/app/static
+    environment:
+      - PRODUCTION=true
+      - DATABASE_URL=sqlite:///nihom.db
+      - SECRET_KEY=${SECRET_KEY:-change-this-in-production}
+      - ALLOWED_ORIGINS=http://localhost,https://yourdomain.com
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
