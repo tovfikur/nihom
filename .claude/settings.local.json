@@ -14,7 +14,8 @@
       "Bash(gh auth:*)",
       "Bash(node --version:*)",
       "Bash(npm init:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

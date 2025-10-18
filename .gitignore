@@ -26,6 +26,7 @@ admin/logs/
 .vscode/
 .idea/
 *.swp
+*.swo
 
 # OS
 .DS_Store
@@ -34,6 +35,14 @@ Thumbs.db
 # Uploads
 uploads/
 
-# Node modules (if any)
+# Node modules
 node_modules/
 package-lock.json
+
+# Source files (Word docs)
+*.docx
+*_extracted/
+
+# Temporary files
+*.tmp
+*.bak
