@@ -1,0 +1,12 @@
+================================================================================
+DOCUMENT CONTENT
+================================================================================
+
+[IMAGE_1]
+[IMAGE_2]
+[IMAGE_3]
+[IMAGE_4]
+Image 1 saved to: K:\httpnihom25.com\Various Photos_extracted\images\image_1.jpeg
+Image 2 saved to: K:\httpnihom25.com\Various Photos_extracted\images\image_2.jpeg
+Image 3 saved to: K:\httpnihom25.com\Various Photos_extracted\images\image_3.jpeg
+Image 4 saved to: K:\httpnihom25.com\Various Photos_extracted\images\image_4.jpeg
