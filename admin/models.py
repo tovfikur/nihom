@@ -8,7 +8,7 @@ Base = declarative_base()
 class HeroContent(Base):
     __tablename__ = 'hero_content'
     id = Column(Integer, primary_key=True)
-    badge_text = Column(String(200), default='Since 2020 | Bangladesh Navy')
+    badge_text = Column(String(200), default='Since 2026 | Bangladesh Navy')
     title_line1 = Column(String(100), default='Navy Institute of')
     title_line2 = Column(String(100), default='Hospitality Management')
     subtitle_word1 = Column(String(50), default='Excellence')
